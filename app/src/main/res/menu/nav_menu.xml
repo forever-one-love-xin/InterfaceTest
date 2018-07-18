@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <!--menu是用来在NavigationView中显示具体的菜单项的-->
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_call"
+            android:icon="@android:drawable/ic_menu_call"
+            android:title="Call" />
+        <item
+            android:id="@+id/nav_friends"
+            android:icon="@android:drawable/ic_menu_agenda"
+            android:title="Friends" />
+        <item
+            android:id="@+id/nav_location"
+            android:icon="@android:drawable/ic_menu_mylocation"
+            android:title="Location" />
+        <item
+            android:id="@+id/nav_mail"
+            android:icon="@android:drawable/ic_menu_report_image"
+            android:title="Mail" />
+    </group>
+</menu>

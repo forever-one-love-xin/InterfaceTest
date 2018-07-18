@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+    showAsAction主要有以下几种值可选：always表示永远显示在Toolbar中，如果屏幕控件不够则不显示；
+    ifRoom表示屏幕控件足够的情况下显示在Toolbar中，不够的化就显示在菜单当中；never则表示永远显示在菜单当中。
+    注意，Toolbar中的action按钮只会显示图标，菜单中的action按钮只会显示文字。
+    -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/backup"
+        android:icon="@android:drawable/ic_menu_close_clear_cancel"
+        android:title="Backup"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/delete"
+        android:icon="@android:drawable/ic_delete"
+        android:title="Delete"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/settings"
+        android:icon="@android:drawable/ic_menu_more"
+        android:title="Settings"
+        app:showAsAction="always" />
+</menu>

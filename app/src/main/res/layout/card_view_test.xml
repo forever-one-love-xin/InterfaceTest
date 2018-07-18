@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    CardView是用于实现卡片式布局效果的重要控件，由appcompat-v7库提供。实际上，CardView也是一个FrameLayout,
+    只是额外提供了圆角和阴影等效果，看上去会有立体的感觉。
+    cardBackgroundColor     设置cardview背景颜色
+    cardCornerRadius        设置cardview 圆角的半径
+    cardElevation           设置cardview的阴影
+    contentPadding          设置cardview的内间距
+    5.x上面可以设置点击水波纹效果
+    android:foreground="?attr/selectableItemBackground"
+    cardPreventCornerOverlap 防止api20之前圆角与内容重叠 ，在21以后不会重叠
+    cardUseCompatPadding     设置为true 可以为不同L版提供内间距兼容 ，默认为false-->
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    app:cardCornerRadius="4dp"
+    app:elevation="5dp">
+    <!--
+        可以通过app；cardCornerRadius属性指定卡片圆角的弧度，数值远大，圆角的弧度也越大。
+        另外还可以通过app:elevation属性指定卡片的高度，高度值越大，投影范围也越大，但是投影效果越淡，高度值越小，投影范围也越小，但是投影效果越浓。-->
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</android.support.v7.widget.CardView>
